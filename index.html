@@ -449,6 +449,11 @@ button{ font-family:inherit; cursor:pointer; border:none; background:none; }
 .patatas-table td{ text-align:right; color:var(--red-deep); font-family:var(--display); font-weight:400; font-size:.9rem; }
 .patatas-table tr td:first-child{ text-align:left; color:var(--brown-dark); font-family:var(--sans); font-weight:600; }
 .patatas-wrap{ overflow-x:auto; }
+@media (max-width:700px){
+  .patatas-table th{ padding:8px 6px; }
+  .patatas-table td{ padding:14px 8px; }
+  .patatas-table td:not(:first-child){ white-space:nowrap; font-size:.85rem; }
+}
 
 /* combinados */
 .combo-sec{ background:var(--gold); position:relative; overflow:hidden; }
